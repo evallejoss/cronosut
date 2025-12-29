@@ -1,0 +1,101 @@
+==================================================================================================
+Product - SmartDMScoreBoard
+Version - 1.0.5
+Author  - The_Cowboy
+Mods:   - ProAsm
+Tests:  - Wises / Jojoza
+Release Date:
+==================================================================================================
+COMPATIBILITY
+==================================================================================================
+
+SmartDM105
+
+==================================================================================================
+FEATURES
+==================================================================================================
+
+-> Player's faces
+
+-> Country flags
+
+-> Frags/Score
+   If bNewFragSystem is set to true then Frags are shown else Score (Frags-deaths) are shown in
+   Deathmatch.In LMS Lives left are shown.
+
+-> Pickups
+   BELT  = Shield Belts
+   HEAL  = Super Health
+   ARMR  = Armors
+   INVS  = Invisibility
+   TPAD  = Thigh Pads
+   AMPL  = Amplifiers
+   BOOT  = Jump Boots
+
+-> Other stuff
+   TIME = Time played on the server
+   PING = The players ping
+   LOSS = Packet Loss
+
+-> NETT = Netspeed setting of player
+
+-> Stats
+   -> EFF = Efficiency is defined by Frags/(Frags+Deaths).It is shown in % and a bar is displayed
+   -> SURV = Survivability is defined as timeawake( time between spawn and death )/num_of_deaths
+   -> SUICIDES
+   -> KILLSPREE
+   -> HEDSHOT   = Head Shots taken
+   -> PlayerNames are followed by their ranks
+
+-> CTF
+   -> FlgTaken  - The number of time a player grabs the flag.
+   -> Dropped   - The number of time a player drops the flag.
+   -> Captures  - The number of time a player captures the flag.
+
+-> In LMS the players havin 0 lives left are shown in grey
+
+-> Server's name and time elasped are shown in the footer
+
+==================================================================================================
+INSTALLATION
+==================================================================================================
+
+Turn off the server!
+SmartDMScoreBoard105.u to system folder
+Open server.ini
+Scroll to [Engine.GameEngine] section
+ServerPackages=SmartDMScoreBoard105
+
+Open SmartDM.ini and set ( though it has already been done )
+ScoreBoardType=SmartDMScoreBoard105.SmartDMScoreBoard
+
+==================================================================================================
+CONFIGURING SmartDMScoreboard
+==================================================================================================
+
+After first run a file named as SmartDMScoreboard.ini will be created in client's system.
+
+bShowTransparent=False
+Whether the scoreboard should be totally tansparent or have a shaded background.
+
+bShowAltScoreboard=False
+True will remove Pickups and Multikills thus allowing more players to be displayed.
+
+bShowInlineDMPlayers=False
+True will show DeahMatch players inline, for 12 players, 1 to 6 on left and 7 to 12 on the right.
+
+bStatsDrawFaces=True
+Shows player faces instead of game or team icons.
+
+bShowAltTeamHeading=False
+True in a TeamGame, the Red Team / Blue Team heading will alter.
+
+bShowTickFrameRate=True
+True will show Tick Rate and Frame Rate (FPS) will be displayed at bottom right of scoreboard.
+
+bShowSBCrossHair=True
+If True the players crosshair will be displayed while viewing the scoreboard.
+
+NOTE:- These are client side settings only.
+       Clients can and will decide what they want to see.
+       Open the client menu with: Mutate SmartDM Menu

@@ -1,0 +1,2 @@
+[Public]
+Object=(Name=NoUDamage.NoUDamage,Class=Class,MetaClass=Engine.Mutator,Description="No UDamage,Removes UDamage pickups from the level.")
